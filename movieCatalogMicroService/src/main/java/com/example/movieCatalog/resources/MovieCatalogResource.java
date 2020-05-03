@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/catalog")
-public class movieCatalogResource {
+public class MovieCatalogResource {
 
     @RequestMapping("/{userId}")
     public List<CatalogItem> getCatalog(@PathVariable("userId") String userId){
