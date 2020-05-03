@@ -1,4 +1,4 @@
-package com.example.movieCatalog.models;
+package com.example.models;
 
 public class Movie {
     private String movieId;

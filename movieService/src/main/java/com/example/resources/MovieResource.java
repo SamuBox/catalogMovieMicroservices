@@ -1,6 +1,6 @@
-package resources;
+package com.example.resources;
 
-import com.example.movieCatalog.models.Movie;
+import com.example.models.Movie;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/movies")
 public class MovieResource {
 
-    @RequestMapping("{movieId}")
+    @RequestMapping("/{movieId}")
     public Movie getMovieInfo(@PathVariable("movieId") String movieId){
         return new Movie(movieId, "test Name");
     }
