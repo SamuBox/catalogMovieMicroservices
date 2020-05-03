@@ -1,4 +1,4 @@
-package com.example.movieCatalog.resources;
+package resources;
 
 import com.example.movieCatalog.models.Movie;
 import org.springframework.web.bind.annotation.PathVariable;
